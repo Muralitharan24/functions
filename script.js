@@ -1,4 +1,4 @@
 var name = "Murali";
 var nmae1 = "tharan";
 var name = "Vicky";
-var x = 10;
+var myname = "Vignesh";
