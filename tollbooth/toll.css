@@ -1,0 +1,100 @@
+*{
+    margin : 0;
+    padding :0;
+    box-sizing :border-box;
+}
+body {
+    background-color : lightgray;
+}
+.container {
+     display : flex;
+     width :60%;
+     border:1px solid black;
+     margin : auto;
+}
+.contain1,.contain2 {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 350px 315px;
+    border-right: 1px solid black;
+}
+.contain2{
+    border : none;
+    grid-template-columns: 1fr 0.4fr;
+    grid-template-rows: 316px 315px;
+}
+#tollroad1,#tollroad2{
+    width: 128px;
+    height: 665px;
+    /* background-color: green; */
+    background-image: url(road.jpg);
+}
+#tollroad2{
+    margin-left:130px;   
+}
+#subroad1,#subroad2{
+    width: 120px;
+    height:315px;
+    background-color: red;
+    grid-column: 1/2;
+    grid-row: 2/2;
+    background-color: green;
+}
+#subroad2{
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+.gate1,.gate2 {
+    width: 120px;
+    height: 50px;
+    margin-top: 300px;
+    border: 1px solid black;
+    border-left: none;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    cursor:pointer
+    }
+.gate1 p,.gate2 p{
+     margin-top: 15px;
+}
+.gate2 {
+    border: 1px solid black;
+    border-right: none;
+    grid-column: 2/2;
+    grid-row: 2/2;
+    margin-top: 0;
+}
+ #box1,#slide3{
+    width : 95px;
+    height :100px;
+    margin-top:530px;
+    background-image:url(car.png);
+    background-size: 100% 100%;
+    transform:scale(1.4);
+    transition :margin-top 2s;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    line-height: 110px;
+}
+#slide1{
+    width : 95px;
+    height :100px;
+    margin-left:25px;
+    margin-top :20px;
+    background-image:url(car1.png);
+    background-size: 100% 100%; 
+    float :left;
+    transition : margin-top 3s;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    line-height: 88px;
+}
+#slide3{
+    margin-top:10px;
+    transform:none;
+}
+
